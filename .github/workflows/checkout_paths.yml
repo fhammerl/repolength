@@ -32,10 +32,10 @@ jobs:
       - uses: actions/checkout@v3
         with:
           path: repolength_custom_path
-      - run: | 
-          pwd
+        - run: | 
           ls -la
           ls repolength_custom_path
+
 
       - name: echo WORKSPACE - why does it end in repolength/repolength?
         run: echo $GITHUB_WORKSPACE
