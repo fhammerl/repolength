@@ -37,5 +37,7 @@ jobs:
           ls -la
           ls toolkit_custom_path
 
-      - name: echo WORKSPACE - why does it end in repolength/repolength?
+      - name: echo Github WORKSPACE - ends in repolength/repolength
         run: echo $GITHUB_WORKSPACE
+      - name: echo Runner WORKSPACE - ends in repolength
+        run: echo $RUNNER_WORKSPACE
